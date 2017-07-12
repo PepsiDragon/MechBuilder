@@ -2,6 +2,8 @@ package com.dragontec.besm.main;
 
 
 
+import com.dragontec.besm.MechBuilder.gui.GuiController;
+
 import javafx.application.Application;
 import javafx.event.EventHandler;
 import javafx.fxml.FXMLLoader;
@@ -30,7 +32,7 @@ public class Driver extends Application{
             }
         });
         stage.show();
-		
+		GuiController.instance.addListeners();
 	}
 	@Override
 	public void stop(){
